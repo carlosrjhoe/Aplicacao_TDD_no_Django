@@ -10,3 +10,10 @@ class AnimaisTestCase(LiveServerTestCase):
     def tearDown(self):
         '''fechar o browser'''
         self.browser.quit()
+        
+    def test_para_verificar_a_janela_esta_ok(self):
+        self.browser.get(self.live_server_url)
+        
+    def test_falhador(self):
+        '''teste de exemplo de erro'''
+        self.fail('Teste falhou!')
