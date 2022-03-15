@@ -1,3 +1,4 @@
+from select import select
 from django.test import LiveServerTestCase
 from selenium import webdriver
 import time
@@ -28,5 +29,6 @@ class AnimaisTestCase(LiveServerTestCase):
         time.sleep(1)
         self.browser.find_element_by_css_selector('form button').click()
         # O site exibe 4 caraquiteristicas do animal pesquisado
-        
+        caracteristicas = self.browser.find_elements_by_css_selector('.result-description')
+        self.assertGreater(len(caracteristicas), 3)
         # Ele desiste de adotar um leão.

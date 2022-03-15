@@ -22,3 +22,11 @@ Nesta aula:
 - Aprendi a importância da história do usuário para guiar nossos testes;
 - Criei o app de Animais;
 - Testei a url principal da aplicação.
+
+## Aula 04
+
+Nesta aula:
+
+- Criei uma pasta e o template chamado index.html;
+- Testei se o campo de busca estava presente na index;
+- Vi como simular a digitação de um usuário do sistema em um cenário de teste.
