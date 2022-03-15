@@ -14,3 +14,11 @@ Nesta aula:
 - Configurei o Selenium para utilizar o Google Chrome;
 - Subi um servidor de teste com LiveServerTestCase;
 - Criei um método para falhar e vi como essa falha é exibida quando o teste é executado.
+
+## Aula 03
+
+Nesta aula:
+
+- Aprendi a importância da história do usuário para guiar nossos testes;
+- Criei o app de Animais;
+- Testei a url principal da aplicação.
