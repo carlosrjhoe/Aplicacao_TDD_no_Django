@@ -37,3 +37,10 @@ Nesta aula:
 
 - Entendi como testar a view e o model de um app;
 - Criei um cenário para testar a busca de um determinado animal.
+
+## Aula 06
+
+Nesta aula:
+
+- Alterei a view para exibir os resultados da busca;
+- Incluí um css, executamos o collectstatic e melhorei o arquivo index.html.
