@@ -1,6 +1,6 @@
 from django.test import LiveServerTestCase
 from selenium import webdriver
-from selenium.webdriver.common.by import By
+import time
 
 class AnimaisTestCase(LiveServerTestCase):
     
@@ -24,7 +24,9 @@ class AnimaisTestCase(LiveServerTestCase):
         buscar_animal_input = self.browser.find_element_by_css_selector('input#buscar-animal')
         self.assertEqual(buscar_animal_input.get_attribute('placeholder'), 'Exemplo: leão, urso')
         # Ele pesquisa por leão e clica no botão pesquisar
-        
+        buscar_animal_input.send_keys('leão')
+        time.sleep(1)
+        self.browser.find_element_by_css_selector('form button').click()
         # O site exibe 4 caraquiteristicas do animal pesquisado
         
         # Ele desiste de adotar um leão.
