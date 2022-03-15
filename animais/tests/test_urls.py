@@ -12,6 +12,7 @@ class AnimaisURLSTesttCase(TestCase):
     def test_rota_url_utiliza_view_index(self):
         '''teste de a home da aplicação utiliza a função index da view'''
         request = self.factory.get('/')
-        response = index(request)
-        self.assertEqual(response.status_code, 200)
+        with self.assertTemplateUsed('index.html'):
+            response = index(request)
+            self.assertEqual(response.status_code, 200)
         

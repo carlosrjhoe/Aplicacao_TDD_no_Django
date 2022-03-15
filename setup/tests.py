@@ -18,6 +18,6 @@ class AnimaisTestCase(LiveServerTestCase):
         # Ele enconta o buscar Animal e decide usar o site
         home_page = self.browser.get(self.live_server_url + '/') 
         # Porque ele vê no menu do site escrito Busca Animal.
-        brand_element = self.browser.find_element(By.XPATH, '.navbar')
+        brand_element = self.browser.find_element_by_class_name('navbar')
         self.assertEqual('Busca Animal', brand_element.text)
         
