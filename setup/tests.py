@@ -32,3 +32,4 @@ class AnimaisTestCase(LiveServerTestCase):
         caracteristicas = self.browser.find_elements_by_css_selector('.result-description')
         self.assertGreater(len(caracteristicas), 3)
         # Ele desiste de adotar um leão.
+        
