@@ -20,4 +20,10 @@ class AnimaisTestCase(LiveServerTestCase):
         # Porque ele vê no menu do site escrito Busca Animal.
         brand_element = self.browser.find_element_by_class_name('navbar')
         self.assertEqual('Busca Animal', brand_element.text)
+        # Ele vê um campo para pesquisar animais pelo nome
         
+        # Ele pesquisa por leão e clica no botão pesquisar
+        
+        # O site exibe 4 caraquiteristicas do animal pesquisado
+        
+        # Ele desiste de adotar um leão.
