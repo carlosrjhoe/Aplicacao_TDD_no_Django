@@ -30,3 +30,10 @@ Nesta aula:
 - Criei uma pasta e o template chamado index.html;
 - Testei se o campo de busca estava presente na index;
 - Vi como simular a digitação de um usuário do sistema em um cenário de teste.
+
+## Aula 05
+
+Nesta aula:
+
+- Entendi como testar a view e o model de um app;
+- Criei um cenário para testar a busca de um determinado animal.
